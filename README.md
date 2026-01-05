@@ -1,5 +1,5 @@
 # CNMT480GrubBug
-Intentionally vulnerable web application for cybersecurity education
+
 Grubbug Documentation
 
 Project Overview
