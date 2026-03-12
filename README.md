@@ -9,16 +9,23 @@ Grubbug is an intentionally vulnerable web application designed for instruction,
 ## Core Features
 
 Vulnerability Randomizer: Each student will be assigned a random challenge
+
 Progress Tracking: Completion flags are stored per user to prevent repeated challenges and allow instructors to view student progress.
+
 Dynamic Solutions: Submitted answers are validated against a separate solutions database for completion and feedback.
+
 Administrator Features: Admin users can be manually created to manage content and monitor student activity
 
 ## Technologies Used
 
 Python: Core scripting and backend
+
 Flask: Web framework for routing and API endpoints
+
 SQLite: Database framework for user progress and challenge solutions
+
 bcrypt: Password hashing for user authentication
+
 HTML/CSS: Frontend templates and UI
 
 ## Setup Instructions
@@ -45,6 +52,7 @@ flask run --host=0.0.0.0 --port=5000
 ## Database Schemas
 
 users.db: Stores usernames, hashed passwords, and challenge completion flags.
+
 solutions.db: Stores correct answers and explanations for each challenge. Maps each challenge ID to its correct solution and explanation.
 
 ## Column Definitions
