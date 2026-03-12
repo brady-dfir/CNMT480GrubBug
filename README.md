@@ -92,10 +92,15 @@ Admin users are created by using AddAdminToDB.py. This will insert the admin use
 Scripts and Purpose
 
 File Name, Description
+
 app.py, Main Flask application. Handles app routes, user interactions, core functions.
+
 init_db.py, Creates the users database and challenge columns.
+
 init_solutions.py, Creates and populates solutions table.
+
 AddAdminToDB.py, Allows an admin user to be created and added to the user database.
+
 vulnRandomizer.py, Contains functions for the vulnerability randomizer and progress tracking.
 
 ## Templates, Static Files, and Data
@@ -143,7 +148,7 @@ Grubbug uses bcrypt to securely hash stored passwords in users.db. This hash is 
 
 hashed_pw = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
 
-Separation of User and Solution Data
+### Separation of User and Solution Data
 Grubbug uses two separate databases, users.db and solutions.db. These databases contain information that is only visible to admin users. These databases are separate because they contain different information. It also reduces the risk of accidental exposure
 
 ## Ownership and Contact Info
