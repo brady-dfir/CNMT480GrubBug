@@ -49,20 +49,30 @@ solutions.db: Stores correct answers and explanations for each challenge. Maps e
 
 ## Column Definitions
 
-users.db
+### users.db
 Column, Type, Description
+
 Id, INTEGER, Primary key
+
 Username, TEXT UNIQUE, Unique identifier for each user
+
 password, TEXT, Hashed password
+
 Tag, TEXT, Based on assigned role: student or admin
+
 Current_Challenge, Integer, 1-10 based on current challenge
+
 A01_2021_done, INTEGER, 1 if complete, 0 or NULL if incomplete 
+
 A02_2021_done, INTEGER, Same as above, follows pattern through A10_2021_done
 
-solutions.db
+### solutions.db
 Column, Type, Description
+
 challenge_id, TEXT, Primary key
+
 correct_answer, TEXT, Challenge flag or answer string
+
 explanation, TEXT, Explanation shown if answer is incorrect
 
 ## How Challenge Progress is Tracked
