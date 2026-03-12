@@ -138,7 +138,7 @@ To update an existing challenge's solution and/or explanation, manually update s
 
 ## Security Notes
 
-Password Hashing
+### Password Hashing
 Grubbug uses bcrypt to securely hash stored passwords in users.db. This hash is stored in the password column of users.db. This ensures that all passwords will have unique hashes.
 
 hashed_pw = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
