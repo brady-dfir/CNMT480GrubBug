@@ -167,4 +167,5 @@ Grubbug was built by Brady Peer and Connor Lindsey for the CNMT 480 capstone pro
 Contact Info for Questions:
 
 Brady Peer – brdypr@gmail.com
+
 Connor Lindsey – clind773@uwsp.edu
